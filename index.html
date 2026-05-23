@@ -948,27 +948,21 @@ section:nth-child(3) { animation-delay: 0.15s; }
         <span class="q-num">A</span>
         <span class="q-text">過去3ヶ月間で食欲不振、消化器系の問題、そしゃく・嚥下困難で食事量が減少しましたか？</span>
       </div>
-      <div class="q-hint">
-        <strong>目安：</strong>以前の食事量を10割とした場合 — 中等度の減少：5〜8割未満／著しい減少：5割未満（ばらつきがある場合は3日〜1週間の平均）
-      </div>
       <div class="options">
         <label class="option">
           <input type="radio" name="A" value="0">
           <span class="option-marker"></span>
           <span class="option-text">著しい食事量の減少</span>
-          <span class="option-points">0点</span>
         </label>
         <label class="option">
           <input type="radio" name="A" value="1">
           <span class="option-marker"></span>
           <span class="option-text">中等度の食事量の減少</span>
-          <span class="option-points">1点</span>
         </label>
         <label class="option">
           <input type="radio" name="A" value="2">
           <span class="option-marker"></span>
           <span class="option-text">食事量の減少なし</span>
-          <span class="option-points">2点</span>
         </label>
       </div>
     </div>
@@ -983,25 +977,21 @@ section:nth-child(3) { animation-delay: 0.15s; }
           <input type="radio" name="B" value="0">
           <span class="option-marker"></span>
           <span class="option-text">3 kg 以上の減少</span>
-          <span class="option-points">0点</span>
         </label>
         <label class="option">
           <input type="radio" name="B" value="1">
           <span class="option-marker"></span>
           <span class="option-text">わからない</span>
-          <span class="option-points">1点</span>
         </label>
         <label class="option">
           <input type="radio" name="B" value="2">
           <span class="option-marker"></span>
           <span class="option-text">1〜3 kg の減少</span>
-          <span class="option-points">2点</span>
         </label>
         <label class="option">
           <input type="radio" name="B" value="3">
           <span class="option-marker"></span>
           <span class="option-text">体重減少なし</span>
-          <span class="option-points">3点</span>
         </label>
       </div>
     </div>
@@ -1016,19 +1006,16 @@ section:nth-child(3) { animation-delay: 0.15s; }
           <input type="radio" name="C" value="0">
           <span class="option-marker"></span>
           <span class="option-text">寝たきりまたは椅子を常時使用</span>
-          <span class="option-points">0点</span>
         </label>
         <label class="option">
           <input type="radio" name="C" value="1">
           <span class="option-marker"></span>
           <span class="option-text">ベッドや椅子を離れられるが、歩いて外出はできない</span>
-          <span class="option-points">1点</span>
         </label>
         <label class="option">
           <input type="radio" name="C" value="2">
           <span class="option-marker"></span>
           <span class="option-text">歩いて外出できる</span>
-          <span class="option-points">2点</span>
         </label>
       </div>
     </div>
@@ -1043,13 +1030,11 @@ section:nth-child(3) { animation-delay: 0.15s; }
           <input type="radio" name="D" value="0">
           <span class="option-marker"></span>
           <span class="option-text">はい</span>
-          <span class="option-points">0点</span>
         </label>
         <label class="option">
           <input type="radio" name="D" value="2">
           <span class="option-marker"></span>
           <span class="option-text">いいえ</span>
-          <span class="option-points">2点</span>
         </label>
       </div>
     </div>
@@ -1064,19 +1049,16 @@ section:nth-child(3) { animation-delay: 0.15s; }
           <input type="radio" name="E" value="0">
           <span class="option-marker"></span>
           <span class="option-text">高度認知症またはうつ状態</span>
-          <span class="option-points">0点</span>
         </label>
         <label class="option">
           <input type="radio" name="E" value="1">
           <span class="option-marker"></span>
           <span class="option-text">軽度の認知症</span>
-          <span class="option-points">1点</span>
         </label>
         <label class="option">
           <input type="radio" name="E" value="2">
           <span class="option-marker"></span>
           <span class="option-text">精神的問題なし</span>
-          <span class="option-points">2点</span>
         </label>
       </div>
     </div>
@@ -1138,45 +1120,11 @@ section:nth-child(3) { animation-delay: 0.15s; }
           <span class="field-unit">cm</span>
         </div>
       </div>
-      <button type="button" class="help-toggle" id="cc-help-toggle">ふくらはぎ周囲長の測り方</button>
-      <div class="help-content" id="cc-help-content">
-        <ol>
-          <li>椅子またはベッド端座位で、膝を90度に曲げる</li>
-          <li>靴下・ストッキングは脱ぐ（ゆるい衣服はまくり上げる）</li>
-          <li>ふくらはぎの最も太い部分にメジャーを水平に巻く</li>
-          <li>メジャーがきつすぎず、緩みがないよう測定</li>
-          <li>0.1cm単位で読み取る</li>
-        </ol>
-        <div class="note">
-          ※ 寝たきりの方：仰臥位で膝を90度程度に立てて測定<br>
-          ※ 浮腫があると過大評価になるため注意
-        </div>
-      </div>
     </div>
 
     <div class="calc-readout" id="calc-readout">
       <span class="calc-readout-label">自動計算</span>
       <span class="calc-readout-value" id="calc-output">身長と体重を入力してください</span>
-    </div>
-
-    <button type="button" class="help-toggle" id="bmi-help-toggle">BMIの体格区分（参考：日本肥満学会）</button>
-    <div class="help-content" id="bmi-help-content">
-      <table class="bmi-table">
-        <thead>
-          <tr><th>BMI</th><th>体格区分</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>&lt; 18.5</td><td>低体重（やせ）</td></tr>
-          <tr><td>18.5 – 25 未満</td><td>普通体重</td></tr>
-          <tr><td>25 – 30 未満</td><td>肥満（1度）</td></tr>
-          <tr><td>30 – 35 未満</td><td>肥満（2度）</td></tr>
-          <tr><td>35 – 40 未満</td><td>肥満（3度）</td></tr>
-          <tr><td>≥ 40</td><td>肥満（4度）</td></tr>
-        </tbody>
-      </table>
-      <div class="note">
-        ※ MNA-SFのF1のBMI区分（19/21/23）は栄養スクリーニング用の独自基準で、日本肥満学会の体格区分とは異なります。両方を参考情報として表示しています。
-      </div>
     </div>
   </section>
 
@@ -1201,16 +1149,6 @@ section:nth-child(3) { animation-delay: 0.15s; }
     </div>
 
     <div class="judge-message" id="judge-message"></div>
-
-    <!-- ===== Copy Block ===== -->
-    <div class="copy-block">
-      <div class="copy-block-title">— カルテ転載用テキスト —</div>
-      <div class="copy-wrap">
-        <div class="copy-output is-pending" id="copy-output">入力が完了すると、ここにカルテ転載用のテキストが表示されます。</div>
-        <button type="button" class="copy-btn" id="copy-btn" disabled>📋 コピー</button>
-      </div>
-      <div class="copy-hint">右上の「コピー」ボタンでクリップボードにコピーできます</div>
-    </div>
 
     <!-- ===== Criteria ===== -->
     <div class="criteria-block">
@@ -1313,7 +1251,6 @@ section:nth-child(3) { animation-delay: 0.15s; }
     cc: null
   };
 
-  // ===== Helpers =====
   function calcBmi(h, w) {
     if (!h || !w || h <= 0 || w <= 0) return null;
     return w / Math.pow(h / 100, 2);
@@ -1325,16 +1262,6 @@ section:nth-child(3) { animation-delay: 0.15s; }
     if (bmi < 21) return 1;
     if (bmi < 23) return 2;
     return 3;
-  }
-
-  function getBmiCategory(bmi) {
-    if (bmi === null) return null;
-    if (bmi < 18.5) return { label: '低体重（やせ）', cls: 'bmi-cat-low' };
-    if (bmi < 25)   return { label: '普通体重',       cls: 'bmi-cat-normal' };
-    if (bmi < 30)   return { label: '肥満（1度）',    cls: 'bmi-cat-ob1' };
-    if (bmi < 35)   return { label: '肥満（2度）',    cls: 'bmi-cat-ob2' };
-    if (bmi < 40)   return { label: '肥満（3度）',    cls: 'bmi-cat-ob3' };
-    return                 { label: '肥満（4度）',    cls: 'bmi-cat-ob4' };
   }
 
   function calcF2FromCc(cc) {
@@ -1360,42 +1287,19 @@ section:nth-child(3) { animation-delay: 0.15s; }
   }
 
   function getJudgement(total) {
-    if (total === null) return { level: 'pending', label: '入力中', icon: '⏳' };
-    if (total >= 12) return { level: 'normal', label: '栄養状態良好',         icon: '🟢' };
-    if (total >= 8)  return { level: 'risk',   label: '低栄養のおそれあり',   icon: '🟡' };
-    return                  { level: 'mal',    label: '低栄養',                icon: '🔴' };
+    if (total === null) return { level: 'pending', label: '入力中', icon: '\u23F3' };
+    if (total >= 12) return { level: 'normal', label: '\u6804\u990A\u72B6\u614B\u826F\u597D', icon: '\uD83D\uDFE2' };
+    if (total >= 8)  return { level: 'risk',   label: '\u4F4E\u6804\u990A\u306E\u304A\u305D\u308C\u3042\u308A', icon: '\uD83D\uDFE1' };
+    return                  { level: 'mal',    label: '\u4F4E\u6804\u990A', icon: '\uD83D\uDD34' };
   }
 
-  const messages = {
-    normal: '現時点で栄養状態は良好です。引き続きバランスのとれた食事と定期的な再評価をおすすめします（3〜6ヶ月ごとの再評価が目安です）。',
-    risk: '低栄養に進行する可能性があります。食事量・体重の変化に注意し、必要に応じて医師・管理栄養士にご相談ください。1ヶ月以内の再評価をおすすめします。',
-    mal: '低栄養の状態と考えられます。主治医・管理栄養士への相談をおすすめします。栄養補助食品の活用や食形態の調整など、具体的な対策の検討が必要です。'
-  };
-
-  function getTodayString() {
-    const d = new Date();
-    const y = d.getFullYear();
-    const m = String(d.getMonth() + 1).padStart(2, '0');
-    const day = String(d.getDate()).padStart(2, '0');
-    return y + '/' + m + '/' + day;
-  }
-
-  function buildCopyText(total, judge) {
-    if (total === null) return null;
-    const f = getF();
-    const dateStr = getTodayString();
-    const breakdown = 'A ' + state.A + '/2、B ' + state.B + '/3、C ' + state.C + '/2、D ' + state.D + '/2、E ' + state.E + '/2、F ' + f + '/3';
-    return dateStr + ' MNA®-SF結果：' + total + '/14点（' + judge.label + '）（' + breakdown + '）';
-  }
-
-  // ===== Render =====
   function render() {
     const total = getTotal();
     const judge = getJudgement(total);
 
     const scoreDisplay = document.getElementById('score-display');
     const scoreValue = document.getElementById('score-value');
-    scoreValue.textContent = total === null ? '—' : total;
+    scoreValue.textContent = total === null ? '\u2014' : total;
     scoreDisplay.className = 'score-display judge-' + judge.level;
 
     const judgeDisplay = document.getElementById('judge-display');
@@ -1403,15 +1307,7 @@ section:nth-child(3) { animation-delay: 0.15s; }
     const judgeLabel = document.getElementById('judge-label');
     judgeDisplay.className = 'judge-display judge-' + judge.level;
     judgeIcon.textContent = judge.icon;
-    judgeLabel.textContent = total === null ? 'すべての項目を入力してください' : judge.label;
-
-    const msg = document.getElementById('judge-message');
-    if (total !== null && messages[judge.level]) {
-      msg.textContent = messages[judge.level];
-      msg.className = 'judge-message active judge-' + judge.level;
-    } else {
-      msg.className = 'judge-message';
-    }
+    judgeLabel.textContent = total === null ? '\u3059\u3079\u3066\u306E\u9805\u76EE\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044' : judge.label;
 
     document.querySelectorAll('.criteria-row').forEach(row => row.classList.remove('is-active'));
     if (total !== null) {
@@ -1419,47 +1315,31 @@ section:nth-child(3) { animation-delay: 0.15s; }
       if (activeRow) activeRow.classList.add('is-active');
     }
 
-    const copyOutput = document.getElementById('copy-output');
-    const copyBtn = document.getElementById('copy-btn');
-    const copyText = buildCopyText(total, judge);
-    if (copyText === null) {
-      copyOutput.textContent = '入力が完了すると、ここにカルテ転載用のテキストが表示されます。';
-      copyOutput.classList.add('is-pending');
-      copyBtn.disabled = true;
-    } else {
-      copyOutput.textContent = copyText;
-      copyOutput.classList.remove('is-pending');
-      copyBtn.disabled = false;
-    }
-
     const calcOutput = document.getElementById('calc-output');
     if (state.method === 'bmi') {
       const bmi = calcBmi(state.height, state.weight);
       if (bmi === null) {
-        calcOutput.innerHTML = '身長と体重を入力してください';
+        calcOutput.innerHTML = '\u8EAB\u9577\u3068\u4F53\u91CD\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044';
       } else {
         const f1Score = calcF1FromBmi(bmi);
         const f1Range = bmi < 19 ? 'BMI &lt; 19'
-                      : bmi < 21 ? '19 ≤ BMI &lt; 21'
-                      : bmi < 23 ? '21 ≤ BMI &lt; 23'
-                      : 'BMI ≥ 23';
-        const cat = getBmiCategory(bmi);
+                      : bmi < 21 ? '19 \u2264 BMI &lt; 21'
+                      : bmi < 23 ? '21 \u2264 BMI &lt; 23'
+                      : 'BMI \u2265 23';
         calcOutput.innerHTML =
-          'BMI: <strong>' + bmi.toFixed(1) + '</strong> ／ F1: <strong>' + f1Score + '点</strong>（' + f1Range + '）'
-          + '<br><span class="bmi-category ' + cat.cls + '">参考：' + cat.label + '</span>';
+          'BMI: <strong>' + bmi.toFixed(1) + '</strong> \uFF0F F1: <strong>' + f1Score + '\u30DD\u30A4\u30F3\u30C8</strong>\uFF08' + f1Range + '\uFF09';
       }
     } else {
       if (state.cc === null) {
-        calcOutput.innerHTML = 'ふくらはぎ周囲長を入力してください';
+        calcOutput.innerHTML = '\u3075\u304F\u3089\u306F\u304E\u5468\u56F2\u9577\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044';
       } else {
         const f2Score = calcF2FromCc(state.cc);
-        const range = state.cc < 31 ? 'CC &lt; 31cm' : 'CC ≥ 31cm';
-        calcOutput.innerHTML = 'CC: <strong>' + state.cc.toFixed(1) + 'cm</strong> ／ F2: <strong>' + f2Score + '点</strong>（' + range + '）';
+        const range = state.cc < 31 ? 'CC &lt; 31cm' : 'CC \u2265 31cm';
+        calcOutput.innerHTML = 'CC: <strong>' + state.cc.toFixed(1) + 'cm</strong> \uFF0F F2: <strong>' + f2Score + '\u30DD\u30A4\u30F3\u30C8</strong>\uFF08' + range + '\uFF09';
       }
     }
   }
 
-  // ===== Event Bindings =====
   ['A','B','C','D','E'].forEach(name => {
     document.querySelectorAll('input[type="radio"][name="' + name + '"]').forEach(input => {
       input.addEventListener('change', (e) => {
@@ -1489,57 +1369,6 @@ section:nth-child(3) { animation-delay: 0.15s; }
   bindNumInput('weight', 'weight');
   bindNumInput('cc', 'cc');
 
-  function bindHelpToggle(toggleId, contentId) {
-    const t = document.getElementById(toggleId);
-    const c = document.getElementById(contentId);
-    t.addEventListener('click', () => {
-      t.classList.toggle('open');
-      c.classList.toggle('open');
-    });
-  }
-  bindHelpToggle('cc-help-toggle', 'cc-help-content');
-  bindHelpToggle('bmi-help-toggle', 'bmi-help-content');
-
-  // Copy button
-  const copyBtn = document.getElementById('copy-btn');
-  const copyOutput = document.getElementById('copy-output');
-
-  copyBtn.addEventListener('click', () => {
-    if (copyBtn.disabled) return;
-    const text = copyOutput.textContent;
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).then(() => {
-        showCopied();
-      }).catch(() => fallbackCopy(text));
-    } else {
-      fallbackCopy(text);
-    }
-  });
-
-  function showCopied() {
-    copyBtn.classList.add('copied');
-    copyBtn.innerHTML = '✓ コピー済み';
-    setTimeout(() => {
-      copyBtn.classList.remove('copied');
-      copyBtn.innerHTML = '📋 コピー';
-    }, 2000);
-  }
-
-  function fallbackCopy(text) {
-    const ta = document.createElement('textarea');
-    ta.value = text;
-    ta.style.position = 'fixed';
-    ta.style.opacity = '0';
-    document.body.appendChild(ta);
-    ta.select();
-    try {
-      document.execCommand('copy');
-      showCopied();
-    } catch (e) {}
-    document.body.removeChild(ta);
-  }
-
-  // Reset
   document.getElementById('reset-btn').addEventListener('click', () => {
     document.querySelectorAll('input[type="radio"]:not([name="method"])').forEach(r => r.checked = false);
     document.querySelectorAll('input[type="number"]').forEach(i => i.value = '');

@@ -399,6 +399,17 @@ section {
   width: 100%;
 }
 
+/* スピンボタン（▲▼）を非表示にして手入力に統一 */
+.field-input::-webkit-outer-spin-button,
+.field-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.field-input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 .field-input:focus {
   outline: none;
   border-color: var(--accent);
